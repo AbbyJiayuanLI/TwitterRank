@@ -53,7 +53,7 @@ for user in userList:
     twint.output.tweets_list = []
 
     # NEED TO CHANGE
-    output_topicNumber = open('user_Topic_tweet_Count_TEST.txt', 'w')
+    output_topic_tweet_count = open('user_Topic_tweet_Count_TEST.txt', 'w')
     # output_topic_tweet_count = open('user_Topic_tweet_Count_PREDICT.txt', 'w')
     userTopic_tweet_Dict_str = str(topic_tweet_Dict)
     output_topic_tweet_count.write(userTopic_tweet_Dict_str)
