@@ -2,8 +2,8 @@ import networkx as nx
 import twint
 
 
-f = open('./testUserDONE.txt', 'r')
-# f = open('./predictUserDONE.txt', 'r')
+f = open('./network_TEST_DONE.txt', 'r')
+# f = open('./network_PREDICT_DONE.txt', 'r')
 userDict = eval(f.read())
 userGraph = nx.DiGraph(userDict)
 
@@ -43,32 +43,32 @@ for user in userList:
     twint.output.tweets_list = []
 
     if (userCount % 5 == 0) and (userCount > 0):
-        output_topicNumber = open('userTopicCount_test.txt', 'w')
-        # output_topicNumber = open('userTopicCount_predict.txt', 'w')
+        output_topicNumber = open('userTopicCount_TEST.txt', 'w')
+        # output_topicNumber = open('user_TopicCount_PREDICT.txt', 'w')
         userTopicDict_str = str(userTopicDict)
         output_topicNumber.write(userTopicDict_str)
         output_topicNumber.close()
 
         # NEED TO CHANGE
-        output_retweet = open('userretweet_test.txt', 'w')
-        # output_retweet = open('userretweet_predict.txt', 'w')
-        userretweetdict_str = str(userretweetdict)
-        output_retweet.write(userretweetdict_str)
+        output_retweet = open('userretweet_TEST.txt', 'w')
+        # output_retweet = open('user_retweet_PREDICT.txt', 'w')
+        user_retweetDict_str = str(userRetweetDict)
+        output_retweet.write(user_retweetDict_str)
         output_retweet.close()
 
 
 # NEED TO CHANGE
-output_topicNumber = open('userTopicCount_test.txt', 'w')
-# output_topicNumber = open('userTopicCount_predict.txt', 'w')
+output_topicNumber = open('userTopicCount_TEST.txt', 'w')
+# output_topicNumber = open('userTopicCount_PREDICT.txt', 'w')
 userTopicDict_str = str(userTopicDict)
 output_topicNumber.write(userTopicDict_str)
 output_topicNumber.close()
 
 # NEED TO CHANGE
-output_retweet = open('userretweet_test.txt', 'w')
-# output_retweet = open('userretweet_predict.txt', 'w')
-userretweetdict_str = str(userretweetdict)
-output_retweet.write(userretweetdict_str)
+output_retweet = open('userretweet_TEST.txt', 'w')
+# output_retweet = open('user_retweet_PREDICT.txt', 'w')
+user_retweetDict_str = str(userRetweetDict)
+output_retweet.write(user_retweetDict_str)
 output_retweet.close()
 
 
