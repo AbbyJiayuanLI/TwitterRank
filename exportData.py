@@ -119,7 +119,7 @@ for i in network_TEST:
         network_remove_TEST.append(i)
 
 for i in network_PREDICT:
-    if i not in i_keyword_count_PREDICT:
+    if i not in i_user_tweets_count_PREDICT:
         network_remove_PREDICT.append(i)
 
 network_TEST.remove_nodes_from(network_remove_TEST)
