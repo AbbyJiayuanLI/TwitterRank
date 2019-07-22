@@ -14,6 +14,7 @@ f11 = eval(open('./travis/each_movie_TEST5.txt', 'r').read())
 f12 = eval(open('./travis/each_movie_TEST6.txt', 'r').read())
 f13 = eval(open('./travis/each_movie_TEST7.txt', 'r').read())
 f14 = eval(open('./travis/each_movie_TEST8.txt', 'r').read())
+f15 = eval(open('./travis/each_movie_TEST.txt', 'r').read())
 
 n1 = eval(open('./yanxiao/each_movie_PREDICT1.txt', 'r').read())
 n2 = eval(open('./yanxiao/each_movie_PREDICT2.txt', 'r').read())
@@ -31,7 +32,9 @@ n13 = eval(open('./travis/each_movie_PREDICT7.txt', 'r').read())
 n14 = eval(open('./travis/each_movie_PREDICT8.txt', 'r').read())
 
 
+# 851
 predict = []
+# test 869
 test = []
 
 
@@ -54,6 +57,7 @@ test = jjj(f11, test)
 test = jjj(f12, test)
 test = jjj(f13, test)
 test = jjj(f14, test)
+test = jjj(f15, test)
 
 
 predict = jjj(n1, predict)
@@ -68,6 +72,7 @@ print(len(predict))
 predict = jjj(n6, predict)
 print(len(predict))
 predict = jjj(n7, predict)
+predict = jjj(n8, predict)
 print(len(predict))
 predict = jjj(n9, predict)
 print(len(predict))
@@ -84,21 +89,22 @@ print(len(predict))
 
 # print(predict)
 
-print(len(n1))
-print(len(n2))
-print(len(n3))
-print(len(n4))
-print(len(n5))
-print(len(n6))
-print(len(n7))
-print(len(n8))
-print(len(n9))
-print(len(n10))
-print(len(n11))
-print(len(n12))
-print(len(n13))
-print(len(n14))
+print(len(f1))
+print(len(f2))
+print(len(f3))
+print(len(f4))
+print(len(f5))
+print(len(f6))
+print(len(f7))
+print(len(f8))
+print(len(f9))
+print(len(f10))
+print(len(f11))
+print(len(f12))
+print(len(f13))
+print(len(f14))
 
+print(len(predict))
 print(len(test))
 def export_predict(filename, list1):
     csv_columns = ['user', 'rojo', 'crawl', 'stuber', 'thefarewell', 'bethanyhamiton']
@@ -122,8 +128,8 @@ def export_test(filename, list1):
     except IOError:
         print("I/O error") 
 
-export_predict('./data/each_movie_TEST.csv', predict)
-export_test('./data/each_movie_PREDICT.csv', test)
+export_predict('./data/each_movie_PREDICT.csv', predict)
+export_test('./data/each_movie_TEST.csv', test)
 
 
 

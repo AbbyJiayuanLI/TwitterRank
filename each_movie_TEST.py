@@ -23,7 +23,7 @@ def export(filename, list1):
 
 
 # NEED TO CHANGE
-userList = [userList[i] for i in range(0, 100)]
+userList = [userList[i] for i in range(865, 869)]
 
 l1 = []
 
