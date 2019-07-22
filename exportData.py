@@ -11,19 +11,22 @@ def dictSort(dict1):
     return dict1
 
 
-retweet_dict_TEST = dictSort(eval(open('./data/retweet_dict_TEST.txt', 'r').read()))
-retweet_dict_PREDICT = dictSort(eval(open('./data/retweet_dict_PREDICT.txt', 'r').read()))
-topic_tweets_count_TEST = dictSort(eval(open('./data/topic_tweets_dict_TEST.txt', 'r').read()))
-topic_tweets_count_PREDICT = dictSort(eval(open('./data/topic_tweets_dict_PREDICT.txt', 'r').read()))
-topic_keyword_count_TEST = dictSort(eval(open('./data/topic_number_dict_TEST.txt', 'r').read()))
-topic_keyword_count_PREDICT = dictSort(eval(open('./data/topic_number_dict_PREDICT.txt', 'r').read()))
+# retweet_dict_TEST = dictSort(eval(open('./data/retweet_dict_TEST.txt', 'r').read()))
+# retweet_dict_PREDICT = dictSort(eval(open('./data/retweet_dict_PREDICT.txt', 'r').read()))
+# topic_tweets_count_TEST = dictSort(eval(open('./data/topic_tweets_dict_TEST.txt', 'r').read()))
+# topic_tweets_count_PREDICT = dictSort(eval(open('./data/topic_tweets_dict_PREDICT.txt', 'r').read()))
+# topic_keyword_count_TEST = dictSort(eval(open('./data/topic_number_dict_TEST.txt', 'r').read()))
+# topic_keyword_count_PREDICT = dictSort(eval(open('./data/topic_number_dict_PREDICT.txt', 'r').read()))
+user_tweets_count_TEST = dictSort(eval(open('./data/userTweetsCount_TEST.txt', 'r').read()))
+user_tweets_count_PREDICT = dictSort(eval(open('./data/userTweetsCount_PREDICT.txt', 'r').read()))
 
 
-print(retweet_dict_PREDICT)
 
-out_retweet_dict_TEST = export('retweet_count_TEST.csv', retweet_dict_TEST)
-out_retweet_dict_PREDICT = export('retweet_count_PREDICT.csv', retweet_dict_PREDICT)
-out_TopicCount_dict_TEST = export('tweets_keyword_count_TEST.csv', topic_keyword_count_TEST) 
-out_TopicCount_dict_PREDICT = export('tweets_keyword_count_PREDICT.csv', topic_keyword_count_PREDICT) 
-out_topic_tweets_count_TEST = export('topic_tweets_count_TEST.csv', topic_tweets_count_TEST)
-out_topic_tweets_count_PREDICT = export('topic_tweets_count_PREDICT.csv', topic_tweets_count_PREDICT)
+# out_retweet_dict_TEST = export('retweet_count_TEST.csv', retweet_dict_TEST)
+# out_retweet_dict_PREDICT = export('retweet_count_PREDICT.csv', retweet_dict_PREDICT)
+# out_TopicCount_dict_TEST = export('tweets_keyword_count_TEST.csv', topic_keyword_count_TEST) 
+# out_TopicCount_dict_PREDICT = export('tweets_keyword_count_PREDICT.csv', topic_keyword_count_PREDICT) 
+# out_topic_tweets_count_TEST = export('topic_tweets_count_TEST.csv', topic_tweets_count_TEST)
+# out_topic_tweets_count_PREDICT = export('topic_tweets_count_PREDICT.csv', topic_tweets_count_PREDICT)
+out_user_tweets_count_TEST = export('user_tweets_count_TEST.csv', user_tweets_count_TEST)
+out_user_tweets_count_PREDICT = export('user_tweets_count_PREDICT.csv', user_tweets_count_PREDICT)
