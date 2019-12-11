@@ -1,8 +1,8 @@
 import twint
 import networkx as nx
 
-# f = open('testUsers.txt', 'r')
-f = open('predictUser.txt', 'r')
+f = open('./network_PREDICT_DONE.txt', 'r')
+# f = open('./network_TEST_DONE_DONE.txt', 'r')
 
 # get the user graph from the txt
 userStr = f.read()
@@ -15,7 +15,7 @@ print("Edges number: %d" % (userGraph.number_of_edges()))
 userList = list(userGraph.nodes)
 userList.sort()
 
-userList1 = [userList[i] for i in range(0, 100)]
+userList1 = [userList[i] for i in range(480, 500)]
 
 count = 0
 for user in userList1:
